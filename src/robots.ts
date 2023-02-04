@@ -7,6 +7,7 @@ export const createRobots = ({ policies, sitemap }: Robots) => {
 	const policiesString = createPolcies(policies);
 
 	const sitemapString = createRules("Sitemap", sitemap);
+	const _sda = 1;
 
 	return `${userAgentString}${policiesString}\n${sitemapString}`;
 };
