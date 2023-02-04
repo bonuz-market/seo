@@ -6,9 +6,9 @@ const createNewLine = (addNewLine: boolean) => {
 
 export const hasBaseUserAgent = (policy: Policy | Policy[]) => {
 	if (Array.isArray(policy)) {
-		return policy[0].userAgent;
+		return !!policy[0].userAgent;
 	}
-	return policy.userAgent;
+	return !!policy.userAgent;
 };
 
 export const createRules = (
