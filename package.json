@@ -2,9 +2,12 @@
 	"name": "next-seo-robots",
 	"version": "0.1.0",
 	"private": true,
+	"files": [
+		"dist"
+	],
 	"main": "index.ts",
 	"scripts": {
-		"build": "npx tsc ./src/index.ts --outDir ./dist",
+		"build": "npx tsc",
 		"dev": "npx tsc -w",
 		"test": "jest"
 	},
