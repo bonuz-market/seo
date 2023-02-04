@@ -1,10 +1,17 @@
 {
-	"name": "next-seo-robots",
-	"version": "0.1.0",
-	"private": true,
-	"files": [
-		"dist"
+	"name": "@bonuz/seo",
+	"version": "1.0.0",
+	"author": "Bonuz",
+	"contributors": [
+		{
+			"name": "Mostafa Talaat",
+			"email": "mostafa.talaat@bonuz.market"
+		}
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bonuz-market/seo.git"
+	},
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
@@ -13,6 +20,9 @@
 		"import": "./dist/index.mjs",
 		"default": "./dist/index.js"
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "rollup -c && tsc",
 		"dev": "npx tsc -w",
