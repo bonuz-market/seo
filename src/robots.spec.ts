@@ -1,4 +1,4 @@
-import { createPolcies, createPolicy, createRules, hasBaseUserAgent } from './helpers'
+import { createPolicies, createPolicy, createRules, hasBaseUserAgent } from './helpers'
 import { createRobots } from './robots'
 import { Policy, Robots } from './types'
 
@@ -34,7 +34,7 @@ describe('helpers', () => {
     })
   })
 
-  describe('createPolcies', () => {
+  describe('createPolicies', () => {
     it('should return correct string for policies array', () => {
       const policies: Policy[] = [
         {
@@ -46,7 +46,7 @@ describe('helpers', () => {
           disallow: '/disallow-that',
         },
       ]
-      const result = createPolcies(policies)
+      const result = createPolicies(policies)
       expect(result).toEqual(
         'Allow: /allow-this\nDisallow: /disallow-this\nAllow: /allow-that\nDisallow: /disallow-that',
       )
@@ -57,7 +57,7 @@ describe('helpers', () => {
         allow: '/allow-this',
         disallow: '/disallow-this',
       }
-      const result = createPolcies(policy)
+      const result = createPolicies(policy)
       expect(result).toEqual('Allow: /allow-this\nDisallow: /disallow-this')
     })
   })
