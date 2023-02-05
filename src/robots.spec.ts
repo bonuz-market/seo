@@ -1,9 +1,16 @@
-import { createPolicies, createPolicy, createRules, hasBaseUserAgent } from './helpers'
+import { createPolicies, createPolicy, createRules, ERROR_ALLOW_DISALLOW_UNMET, hasBaseUserAgent } from './helpers'
 import { createRobots } from './robots'
 import { Policy, Robots } from './types'
 
 describe('helpers', () => {
   describe('createPolicy', () => {
+    it(`should throw error '${ERROR_ALLOW_DISALLOW_UNMET}' for not setting either "allow" nor "disallow" config`, () => {
+      const action = () => {
+        createPolicy({})
+      }
+      expect(action).toThrowError(ERROR_ALLOW_DISALLOW_UNMET)
+    })
+
     it('should return correct string for policy with allow and disallow values', () => {
       const policy: Policy = {
         allow: '/allow-this',

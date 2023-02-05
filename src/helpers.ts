@@ -1,5 +1,7 @@
 import { Policy } from './types'
 
+export const ERROR_ALLOW_DISALLOW_UNMET = 'At least one or more disallow or allow entries per rule.'
+
 const createNewLine = (addNewLine: boolean) => {
   return addNewLine ? '\n' : ''
 }
@@ -21,6 +23,15 @@ export const createRules = (rule: string, value: string | string[] | undefined) 
 
 export const createPolicy = (policy: Policy, newLine: boolean = false) => {
   const { allow, disallow, userAgent } = policy
+
+  /*
+    - At least one or more disallow or allow entries per rule.
+    - https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt 
+
+    - Check against undefined and empty string is achieved in JS
+      in a simple boolean negation, see below.
+  */
+  if (!allow && !disallow) throw new Error(ERROR_ALLOW_DISALLOW_UNMET)
 
   const userAgentString = userAgent ? `User-agent: ${userAgent}` : ''
 

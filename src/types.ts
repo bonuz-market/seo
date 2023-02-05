@@ -1,10 +1,12 @@
-export interface Policy {
-  allow: string | string[]
-  disallow: string | string[]
+export type SingleOrArray<T> = T | T[]
+
+export type Policy = {
   userAgent?: string
+  allow?: SingleOrArray<string>
+  disallow?: SingleOrArray<string>
 }
 
 export interface Robots {
-  policies: Policy | Policy[]
-  sitemap?: string | string[]
+  policies: SingleOrArray<Policy>
+  sitemap?: SingleOrArray<string>
 }
