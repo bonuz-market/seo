@@ -33,7 +33,7 @@ export const createPolicy = (policy: Policy, newLine: boolean = false) => {
   return `${userAgentStringFormatted}${allowString}\n${disallowString}`
 }
 
-export const createPolcies = (policies: Policy | Policy[]) => {
+export const createPolicies = (policies: Policy | Policy[]) => {
   if (Array.isArray(policies)) {
     return policies.map((p, i) => createPolicy(p, i !== 0)).join('\n')
   }
