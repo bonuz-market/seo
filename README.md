@@ -4,7 +4,7 @@
 
 A simple **zero dependency** SEO package.
 
-## ⭐️ Features
+⭐️ Features
 ---
 - 🤖 Robots.txt
   - ✅ Create configuration with built in validation.
@@ -12,15 +12,15 @@ A simple **zero dependency** SEO package.
 - 🏷️ Robots Meta Tag
   - 📦 Create preconfigured settings for allow and disallow all.
 
-## 🎁 Examples
+🎁 Examples
 ---
 - Can be found within the jest test files (`*.spec.ts`).
 
-## 🗺️ Roadmap
+🗺️ Roadmap
 ---
 - Finalize support for the Robots Meta Tag feature.
 
-## 👁️ Maintainer
+👁️ Maintainer
 ---
 Developed and maintained by the folks at [Bonuz](https://github.com/bonuz-market).
 
