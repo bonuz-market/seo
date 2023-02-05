@@ -1,6 +1,11 @@
 {
 	"name": "@bonuz/seo",
 	"version": "1.0.1",
+	"scripts": {
+		"build": "rollup -c && tsc",
+		"dev": "npx tsc -w",
+		"test": "jest"
+	},
 	"author": "Bonuz",
 	"contributors": [
 		{
@@ -23,11 +28,6 @@
 	"files": [
 		"dist"
 	],
-	"scripts": {
-		"build": "rollup -c && tsc",
-		"dev": "npx tsc -w",
-		"test": "jest"
-	},
 	"devDependencies": {
 		"@types/jest": "^29.4.0",
 		"esbuild": "^0.17.5",
