@@ -5,9 +5,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     createRobots({
       policies: [
         {
+          userAgent: 'Googlebot',
           allow: '/',
           disallow: '/admin',
-          userAgent: 'Googlebot',
         },
       ],
     }),
