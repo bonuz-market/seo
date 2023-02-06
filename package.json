@@ -2,7 +2,7 @@
 	"name": "@bonuz/seo",
 	"version": "1.0.1",
 	"scripts": {
-		"build": "rollup -c && tsc",
+		"build": "rimraf dist && rollup -c",
 		"dev": "npx tsc -w",
 		"test": "jest"
 	},
