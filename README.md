@@ -2,7 +2,7 @@
 
 # @bonuz/seo
 
-A simple **zero dependency** SEO package.
+A simple TypeScript first **zero dependency** SEO robot-focused package.
 
 ⭐️ Features
 ---
