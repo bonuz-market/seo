@@ -1,6 +1,6 @@
 {
 	"name": "@bonuz/seo",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"scripts": {
 		"build": "rimraf dist && rollup -c",
 		"dev": "npx tsc -w",
@@ -36,6 +36,7 @@
 		"@types/jest": "^29.4.0",
 		"esbuild": "^0.17.5",
 		"jest": "^29.4.1",
+		"rimraf": "^4.1.2",
 		"rollup": "^3.13.0",
 		"rollup-plugin-dts": "^5.1.1",
 		"rollup-plugin-esbuild": "^5.0.0",
