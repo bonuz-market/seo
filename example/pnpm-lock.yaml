@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bonuz/seo': ^1.0.1
+  '@bonuz/seo': file:../
   '@next/font': 13.1.6
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -14,7 +14,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@bonuz/seo': 1.0.1
+  '@bonuz/seo': file:..
   '@next/font': 13.1.6
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -33,10 +33,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
-    dev: false
-
-  /@bonuz/seo/1.0.1:
-    resolution: {integrity: sha512-uDV3pM9zfIOs92PfA2/1X7MW0amS8ZQRIlkFqpDuq9wH+eTbb56jWpWhoXHPjBv5YGaH6JqV/LLUDBfmR4+QOw==}
     dev: false
 
   /@eslint/eslintrc/1.4.1:
@@ -2165,4 +2161,10 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  file:..:
+    resolution: {directory: .., type: directory}
+    name: '@bonuz/seo'
+    version: 1.0.2
     dev: false
