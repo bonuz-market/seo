@@ -7,7 +7,7 @@ A simple TypeScript first **zero dependency** SEO robot-focused package.
 ⭐️ Features
 ---
 - 🤖 Robots.txt
-  - ✅ Create configuration with built in validation.
+  - ✅ Create configuration with built-in validation.
   - 📦 Create preconfigured settings for allow and disallow all.
 - 🏷️ Robots Meta Tag
   - 📦 Create preconfigured settings for allow and disallow all.
